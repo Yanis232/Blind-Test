@@ -1,0 +1,13 @@
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\bin\Debug\net8.0\MSSQLApp.ServiceDefaults.deps.json
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\bin\Debug\net8.0\MSSQLApp.ServiceDefaults.dll
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\bin\Debug\net8.0\MSSQLApp.ServiceDefaults.pdb
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.AssemblyInfo.cs
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.dll
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\refint\MSSQLApp.ServiceDefaults.dll
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.pdb
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\ref\MSSQLApp.ServiceDefaults.dll
+C:\Users\Yanis\source\repos\MSSQLApp\MSSQLApp.ServiceDefaults\obj\Debug\net8.0\MSSQLApp.ServiceDefaults.sourcelink.json

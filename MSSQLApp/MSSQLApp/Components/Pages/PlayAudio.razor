@@ -1,0 +1,35 @@
+﻿@page "/playaudio"
+@using MSSQLApp.Data        <!-- Utilisez MSSQLApp.Data ici -->
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext DbContext
+
+<h3>Audio Files</h3>
+
+@if (AudioFiles != null && AudioFiles.Any())
+{
+    <ul>
+        @foreach (var audio in AudioFiles)
+        {
+            <li>
+                <p>@audio.FileName</p>
+                <audio controls>
+                    <source src="data:@audio.ContentType;base64,@Convert.ToBase64String(audio.Data)" type="@audio.ContentType" />
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No audio files found.</p>
+}
+
+@code {
+    private List<AudioFile> AudioFiles = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        AudioFiles = await DbContext.AudioFiles.ToListAsync();
+    }
+}

@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/MSSQLApp/app.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/7LQoGeJHLZTCGbJIEslcC1uNzYPYEkjHYw13NC7epw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3373"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/7LQoGeJHLZTCGbJIEslcC1uNzYPYEkjHYw13NC7epw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Jan 2025 18:53:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MSSQLApp/app.zz3ryxqlwh.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zz3ryxqlwh"},{"Name":"integrity","Value":"sha256-/7LQoGeJHLZTCGbJIEslcC1uNzYPYEkjHYw13NC7epw="},{"Name":"label","Value":"_content/MSSQLApp/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3373"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/7LQoGeJHLZTCGbJIEslcC1uNzYPYEkjHYw13NC7epw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Jan 2025 18:53:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MSSQLApp/MSSQLApp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MSSQLApp.siv1llqegp.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LOHx\u002BNQUUEi7zU6\u002ByoM2fjycJlyS8aGNEQT\u002BLCXPiH8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"499"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LOHx\u002BNQUUEi7zU6\u002ByoM2fjycJlyS8aGNEQT\u002BLCXPiH8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 14:43:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MSSQLApp/MSSQLApp.siv1llqegp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MSSQLApp.siv1llqegp.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"siv1llqegp"},{"Name":"integrity","Value":"sha256-LOHx\u002BNQUUEi7zU6\u002ByoM2fjycJlyS8aGNEQT\u002BLCXPiH8="},{"Name":"label","Value":"_content/MSSQLApp/MSSQLApp.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"499"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LOHx\u002BNQUUEi7zU6\u002ByoM2fjycJlyS8aGNEQT\u002BLCXPiH8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 14:43:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

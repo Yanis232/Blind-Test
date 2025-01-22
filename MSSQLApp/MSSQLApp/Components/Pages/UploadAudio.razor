@@ -1,0 +1,81 @@
+﻿@page "/uploadaudio"
+@using MSSQLApp.Data
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext DbContext
+
+<h3>Upload Audio File</h3>
+
+@if (FileSelected)
+{
+    <p><strong>File Selected:</strong> @FileName</p>
+    <button @onclick="ConfirmUpload">Confirm Upload</button>
+}
+
+<InputFile OnChange="HandleFileSelected" accept="audio/*" />
+
+@if (Message != null)
+{
+    <p>@Message</p>
+}
+
+@code {
+    private string? Message;
+    private bool FileSelected = false;
+    private string? FileName;
+    private byte[]? FileData;
+
+    // Gère la sélection du fichier par l'utilisateur
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+
+        if (file != null)
+        {
+            // Récupérer le nom et les données du fichier
+            FileName = file.Name;
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            FileData = buffer;
+
+            // Indiquer que le fichier a été sélectionné
+            FileSelected = true;
+        }
+    }
+
+    // Confirmation et envoi du fichier vers la base de données
+    private async Task ConfirmUpload()
+    {
+        if (FileData != null && FileName != null)
+        {
+            try
+            {
+                // Créer un nouvel objet AudioFile
+                var audioFile = new AudioFile
+                    {
+                        FileName = FileName,
+                        ContentType = "audio/mpeg",  // Vous pouvez aussi récupérer le type MIME du fichier si nécessaire
+                        Data = FileData
+                    };
+
+                // Ajouter à la base de données
+                DbContext.AudioFiles.Add(audioFile);
+                var rowsAffected = await DbContext.SaveChangesAsync();
+
+                // Vérification du succès
+                if (rowsAffected > 0)
+                {
+                    Message = "File uploaded and saved successfully!";
+                    FileSelected = false; // Réinitialiser l'état
+                }
+                else
+                {
+                    Message = "There was an issue saving the file.";
+                }
+            }
+            catch (Exception ex)
+            {
+                Message = $"An error occurred: {ex.Message}";
+            }
+        }
+    }
+}

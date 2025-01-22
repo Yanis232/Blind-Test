@@ -1,0 +1,24 @@
+﻿@page "/"
+@using MSSQLApp.Data
+@using Microsoft.EntityFrameworkCore
+
+<PageTitle>Home</PageTitle>
+
+@foreach(var emp in employees){
+	<p>@emp.Name</p>
+	<p>@emp.Title</p>
+	<br />
+	<br />
+}
+
+
+
+@inject AppDbContext dbContext
+
+@code {
+	List<Employee> employees = new List<Employee>();
+	protected override async Task OnInitializedAsync(){
+		employees = await dbContext.Employees.ToListAsync();
+	}
+}
+ 

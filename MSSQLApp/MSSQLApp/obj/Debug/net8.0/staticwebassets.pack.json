@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yanis\\source\\repos\\MSSQLApp\\MSSQLApp\\MSSQLApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MSSQLApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MSSQLApp.siv1llqegp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yanis\\source\\repos\\MSSQLApp\\MSSQLApp\\MSSQLApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MSSQLApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MSSQLApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MSSQLApp.props",
+      "PackagePath": "build\\MSSQLApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MSSQLApp.props",
+      "PackagePath": "buildMultiTargeting\\MSSQLApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MSSQLApp.props",
+      "PackagePath": "buildTransitive\\MSSQLApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
